@@ -30,11 +30,11 @@ As there are only five numeric columns in the dataset, a **scatterplot matrix** 
 
 Also, there is a **categorical column (Type)** that may have some relationships with the machine failure column. A **summary table** is created to show the failure rates in **percentages** for each of the product type (L, M and H).  
 
-| Type | Count (Non Failure) | Count (Failure) | Count (Total) | Percentage (Non Failure | Percentage (Failure) |
-|------|---------------------|-----------------|---------------|-------------------------|----------------------|
-| L    | 5765                | 235             | 6000          | 96.08%                  | 3.92%                |
-| M    | 2914                | 83              | 2997          | 97.23%                  | 2.77%                |
-| H    | 982                 | 21              | 1003          | 97.91%                  | 2.09%                |
+| Type | Count (Non Failure) | Count (Failure) | Count (Total) | Percentage (Non Failure) | Percentage (Failure) |
+|------|---------------------|-----------------|---------------|--------------------------|----------------------|
+| L    | 5765                | 235             | 6000          | 96.08%                   | 3.92%                |
+| M    | 2914                | 83              | 2997          | 97.23%                   | 2.77%                |
+| H    | 982                 | 21              | 1003          | 97.91%                   | 2.09%                |
 
 From the data exploration, here are some key findings regarding the variables: 
 1. Correlation among the numeric variables 
