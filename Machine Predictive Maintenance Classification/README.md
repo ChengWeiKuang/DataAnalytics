@@ -26,7 +26,7 @@ The dataset consists of 10,000 data points stored as rows with 14 features in co
 ### Key Takeaways from Data Exploration
 As there are only five numeric columns in the dataset, a **scatterplot matrix** is plotted to illustrate their relationship, with **different colors representing machine failure** (whether that record is a failure or not).  
 
-![Scatterplot Matrix](scatterplot_matrix.png "Scatterplot Matrix")  
+![Scatterplot Matrix](appendix/scatterplot_matrix.png "Scatterplot Matrix")  
 
 Also, there is a **categorical column (Type)** that may have some relationships with the machine failure column. A **summary table** is created to show the failure rates in **percentages** for each of the product type (L, M and H).  
 
@@ -60,7 +60,7 @@ The following **table summarizes the performances** of the final models trained 
 From the summary table, it can be seen that the **Gradient Boosting model** has the **best performance** for both metrics among the few models trained. 
 The **feature importance** attribute from the Gradient Boosting model also suggested that the **Torque [Nm]** variable **contributes the most** to the model's prediction algorithm.  
 
-![Feature Importance for Gradient Boosting Model](feat_imp_gb.png "Feature Importance for Gradient Boosting Model")  
+![Feature Importance for Gradient Boosting Model](appendix/feat_imp_gb.png "Feature Importance for Gradient Boosting Model")  
 
 
 ### Files 
