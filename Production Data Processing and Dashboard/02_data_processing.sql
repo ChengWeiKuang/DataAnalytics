@@ -42,6 +42,8 @@ SELECT LoadWeek, ProductName, TestName,
 	COUNT(DISTINCT SerialNum) AS LoadQty, 
 	COUNT(DISTINCT CASE WHEN (TestCount_Asc = 1 AND TestResult = 'PASS') THEN SerialNum END)*1.0000/COUNT(DISTINCT SerialNum) AS FirstPassYield, 
 	COUNT(DISTINCT CASE WHEN (TestCount_Desc = 1 AND TestResult = 'PASS') THEN SerialNum END)*1.0000/COUNT(DISTINCT SerialNum) AS CummYield, 
+	COUNT(SerialNum) AS TestQty, 
+	COUNT(CASE WHEN TestResult = 'PASS' THEN SerialNum END) AS TestQty_Pass, 
 	AVG(CASE WHEN TestResult = 'PASS' THEN TestDuration_s END) AS AvgTestDuration_Pass_s,
 	AVG(CASE WHEN TestResult != 'PASS' THEN TestDuration_s END) AS AvgTestDuration_Fail_s
 FROM #rawdata 
